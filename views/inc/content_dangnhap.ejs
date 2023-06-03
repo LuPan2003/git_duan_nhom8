@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        .box1{
+            position:absolute;
+            /* margin: 100px;
+            padding:0 0px;
+            width: 100%; 
+            padding-right: 200px; */
+            /* margin-top: 100px; */
+            padding-right: 500px;
+            padding-left: 450px;
+            margin-top: 60px;
+            box-sizing:border-box;
+           
+        }
+    </style>
+</head>
+<body>
+
+        <div class="box1">
+         
+                <form method="POST" action="/dangnhap">
+                    <h3 style="margin-bottom: 50px;">Đăng Nhập Tài Khoản</h3>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" name="pass">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input style="margin-left: 5px;" type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label style="margin-left: 10px;" class="form-check-label" for="exampleCheck1">Nhớ Mật Khẩu</label>
+                    </div>
+                    <button type="submit"  class="btn btn-primary padding:30">Đăng Nhập</button>
+                  </form>
+            <!-- </div> -->
+        </div>  
+    
+    <div id="footer" style="margin-top: 600px;">
+        <div class="box">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên hệ</a>
+                </div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>LIÊN HỆ</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<%- include('../inc/top') %> 
+
+<style>
+    .cangiua{
+        margin-top: 20px;
+        text-align: center;
+    }
+  
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<h1>Chi Tiết Sản Phẩm</h1>
+
+<%  products.forEach( (row)  => { %>
+    <tr>
+        <td>
+            <p class="cangiua">
+                <%= row.username %> </td>
+            </p>
+            <td> 
+          <p class="cangiua">
+              <%= row.email %> </td>
+          </p>
+          <td> 
+          <p class="cangiua">
+               <%= row.user %> </td>
+          </p>
+        <td><img style="height: 50px ;width: 50px; margin-left: 70px; margin-top: 10px;" src="<%= row.avata %>"/></td>
+        <td>
+            <button style="margin-left: 30px;" type="button" class="btn btn-info">Xóa </button>
+            <button type="button" class="btn btn-info">Sửa</button>
+        </td>
+    </tr>
+<%  }); %>
+
+<%- include('../inc/bottom') %>

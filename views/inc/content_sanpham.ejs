@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        .box1{
+            position:absolute;
+            margin: 100px;
+            padding:0 0px;
+            width: 100%; 
+            padding-right: 400px;
+            box-sizing:border-box;
+        }
+        .image_sp{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h3>Danh Sách UserName</h3>
+        
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" style="margin: 20px;" data-toggle="modal" data-target="#exampleModal">
+        Thêm Sản Phẩm
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sản Phẩm</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="">Tên SP</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="tên sản phẩm">
+                  
+                </div>
+                <div class="form-group">
+                  <label for="">Loại SP</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="loại sản phẩm">
+                </div>
+                <div class="form-group">
+                    <label for="">Giá SP</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="giá sản phẩm">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Mô Tả</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mô tả sản phẩm">
+                  </div>
+                  <button type="button" style="margin: 10px;" class="btn btn-primary">Hình Ảnh</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+          <button type="button" class="btn btn-primary">Lưu</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="card">
+
+           
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Tên SP</th>
+                        <th scope="col">Loại SP</th>
+                        <th scope="col">Hình Ảnh</th>
+                        <th scope="col">Giá Tiền</th>
+                        <th scope="col">Mô Tả</th>
+                        <th scope="col"></th>
+                        <!-- <th scope="col">Toll</th> -->
+    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Iphone 7</td>
+                        <td>Điện Thoại</td>
+                        <td>    <img class="image_sp" src="images/product_1.png" alt=""> </td>
+                        <td>3.700.000</td>
+                        <td>Mô tả sản phẩm</td>
+                        <td>
+                            <button type="button" class="btn btn-info">Xóa </button>
+                            <button type="button" class="btn btn-info">Sửa</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Iphone 8</td>
+                        <td>Điện Thoại</td>
+                        <td>    <img class="image_sp" src="images/product_2.png" alt=""> </td>
+                        <td>4.700.000</td>
+                        <td>Mô tả sản phẩm</td>
+                        <td>
+                            <button type="button" class="btn btn-info">Xóa </button>
+                            <button type="button" class="btn btn-info">Sửa</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Iphone 6</td>
+                            <td>Điện Thoại</td>
+                            <td>    <img class="image_sp" src="images/product_3.png" alt=""> </td>
+                            <td>5.700.000</td>
+                            <td>Mô tả sản phẩm</td>
+                            <td>
+                                <button type="button" class="btn btn-info">Xóa </button>
+                                <button type="button" class="btn btn-info">Sửa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Iphone 10</td>
+                            <td>Điện Thoại</td>
+                            <td>    <img class="image_sp" src="images/product_4.png" alt=""> </td>
+                            <td>6.700.000</td>
+                            <td>Mô tả sản phẩm</td>
+                            <td>
+                                <button type="button" class="btn btn-info">Xóa </button>
+                                <button type="button" class="btn btn-info">Sửa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Iphone 11</td>
+                            <td>Điện Thoại</td>
+                            <td>    <img class="image_sp" src="images/product_5.png" alt=""> </td>
+                            <td>7.700.000</td>
+                            <td>Mô tả sản phẩm</td>
+                            <td>
+                                <button type="button" class="btn btn-info">Xóa </button>
+                                <button type="button" class="btn btn-info">Sửa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Iphone 12</td>
+                            <td>Điện Thoại</td>
+                            <td>    <img class="image_sp" src="images/product_6.png" alt=""> </td>
+                            <td>8.700.000</td>
+                            <td>Mô tả sản phẩm</td>
+                            <td>
+                                <button type="button" class="btn btn-info">Xóa </button>
+                                <button type="button" class="btn btn-info">Sửa</button>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+            <!-- <input class="btn btn-primary" type="button" value="Input"> -->
+           
+        </div>
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        <a href="">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Blog</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Liên hệ</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
+            </div>
+        </div>
+       </div>
+
+
+
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

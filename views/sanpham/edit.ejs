@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sản Phẩm</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                 
+                  <div class="form-group">
+                    <label for="">Tên SP</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="tên sản phẩm">
+                    
+                  </div>
+                  <div class="form-group">
+                    <label for="">Loại SP</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="loại sản phẩm">
+                  </div>
+                  <div class="form-group">
+                      <label for="">Giá SP</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="giá sản phẩm">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Mô Tả</label>
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mô tả sản phẩm">
+                    </div>
+                    <input style="margin-top: 10px;" type="file" name="file_anh" />
+                </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+            <button type="button" class="btn btn-primary">Lưu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
